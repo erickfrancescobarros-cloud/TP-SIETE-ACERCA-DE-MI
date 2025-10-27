@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .info {
+            margin: 20px;
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            animation: slideIn 1.5s ease-out;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input, textarea {
+            background-color: #f0f0f0;
+        }
+        button {
+            background-color: #00bcd4;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página personal</h1>
+    </header>
+
+    <section class="info">
+        <p>Hola! Soy un estudiante de la EPET 14 en mi último año en la especialidad de electrónica. Tengo 18 años y también me dedico a la edición de videos. Me apasiona la tecnología y el desarrollo de proyectos que combinen creatividad y electrónica.</p>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea rows="4" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
